@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="adresa_databazoveho_serveru_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:simpleType name="login_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:simpleType name="passwd_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:simpleType name="jmeno_databaze_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:complexType name="pristup_databaze_Type">
+        <xsd:sequence>
+            <xsd:element name="adresa_databazoveho_serveru" type="adresa_databazoveho_serveru_Type" />
+            <xsd:element name="login" type="login_Type" />
+            <xsd:element name="passwd" type="passwd_Type" />
+            <xsd:element name="jmeno_databaze" type="jmeno_databaze_Type" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="kolo_Type">
+        <xsd:restriction base="xsd:int" />
+    </xsd:simpleType>
+
+    <xsd:simpleType name="uzamceni_databaze_Type">
+        <xsd:restriction base="xsd:int" />
+    </xsd:simpleType>
+    
+    <xsd:complexType name="aktualni_info_Type">
+        <xsd:sequence>
+            <xsd:element name="kolo" type="kolo_Type" />
+            <xsd:element name="uzamceni_databaze" type="uzamceni_databaze_Type" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="adresa_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:complexType name="server_info_Type">
+        <xsd:sequence>
+            <xsd:element name="adresa" type="adresa_Type" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="nazev_funkce_Type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Copp-Douglasova" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="nazev_parametru_Type">
+        <xsd:restriction base="xsd:string" />
+    </xsd:simpleType>
+
+    <xsd:simpleType name="hodnota_parametru_Type">
+        <xsd:restriction base="xsd:decimal" />
+    </xsd:simpleType>
+
+    <xsd:complexType name="parametr_Type">
+        <xsd:simpleContent>
+            <xsd:extension base="hodnota_parametru_Type">
+                <xsd:attribute name="nazev_parametru" type="nazev_parametru_Type" use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="produkcni_funkce_Type">
+        <xsd:sequence>
+            <xsd:element name="nazev_funkce" type="nazev_funkce_Type" />
+            <xsd:element name="parametr" type="parametr_Type" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="conf_Type">
+        <xsd:sequence>
+            <xsd:element name="pristup_databaze" type="pristup_databaze_Type" />
+            <xsd:element name="aktualni_info" type="aktualni_info_Type" />
+            <xsd:element name="server_info" type="server_info_Type" />
+            <xsd:element name="produkcni_funkce" type="produkcni_funkce_Type" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="conf" type="conf_Type"  />
+</xsd:schema>

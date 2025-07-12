@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : czech.xml
+    Created on : 20. březen 2010, 10:42
+    Author     : pike
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <retezec id_retezce="nadpis_prehled">Přehled transakcí</retezec>
+    <retezec id_retezce="prehled_prodej_spotrebni_zbozi">prodal $mnozstvi kusů spotřebního zboží za cenu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_kapitalove_zbozi">prodal $mnozstvi kusů kapitálového zboží za cenu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_prace">odpracoval $mnozstvi hodin za hodinovou mzdu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_kapital_2_obdobi">zapůjčil částku $mnozstvi na 2 období za tržní úrokovou míru $cena %.</retezec>
+    <retezec id_retezce="prehled_spotreba">nakoupil $mnozstvi kusů spotřebního zboží za cenu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_kapitalove_zbozi">nakoupil $mnozstvi kusů spotřebního zboží za cenu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_prace">nakoupil $mnozstvi hodin práce za hodinovou mzdu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_kapital_2_obdobi">získal úvěr v hodnotě $mnozstvi za úrokovou míru $cena %</retezec>
+    <retezec id_retezce="produkce">vyrobil $mnozstvi_spotrebni_zbozi kusů spotřebního a $mnozstvi_kapitalove_zbozi kusů kapitálového zboží</retezec>
+
+    <retezec id_retezce="prehled_kapital_vyplacene_uroky">zaplatili úrok z půjčky v hodnotě $vyplacene_uroky</retezec>
+    <retezec id_retezce="prehled_kapital_prijate_uroky">obdrželi úrok ze zapůjčených úspor v hodnotě $prijate_uroky</retezec>
+    <retezec id_retezce="prehled_kapital_vyplacene_uvery">splatili úvěr o hodnotě $vyplacene_uvery</retezec>
+    <retezec id_retezce="prehled_kapital_vracene_uspory">obdrželi zpět dříve zapůjčené úspory v hodnotě $vracene_uspory</retezec>
+
+    <retezec id_retezce="prehled_kapital_celkem">celkově změnili výši hotovosti o $zmena_hotovosti</retezec>
+    <retezec id_retezce="prehled_hodnoceni_ziskane_body">získali $ziskane_body bodů</retezec>
+    <retezec id_retezce="prognoza_popis">Zde si můžete určit přehled finančních toků podle zadaných cen.</retezec>
+    <retezec id_retezce="trh_spotrebniho_zbozi">Trh spotřebního zboží</retezec>
+    <retezec id_retezce="trh_kapitaloveho_zbozi">Trh kapitálového zboží</retezec>
+    <retezec id_retezce="trh_prace">Trh práce</retezec>
+    <retezec id_retezce="trh_kapitalu_2_obdobi">Trh kapitálu na 2 obdobi</retezec>
+    <retezec id_retezce="trh">Trh</retezec>
+    <retezec id_retezce="prijmy">Příjmy</retezec>
+    <retezec id_retezce="vydaje">Výdaje</retezec>
+    <retezec id_retezce="trzni_cena">Tržní cena</retezec>
+
+    <retezec id_retezce="prognoza_dalsi_transakce">Dále dojde k následujícím finančním transakcím:</retezec>
+    <retezec id_retezce="prognoza_celkem">Vaše hotovost po skončení kola by při zadaných cenách byla $mnozstvi_kapitalu</retezec>
+    <retezec id_retezce="prognoza_celkem_body">Váš bodový zisk při daných cenách by byl $mnozstvi_bodu</retezec>
+    <retezec id_retezce="prognoza_kapital_vyplacene_uroky">vyplacené úroky: $vyplacene_uroky</retezec>
+    <retezec id_retezce="prognoza_kapital_prijate_uroky">přijané úroky: $prijate_uroky</retezec>
+    <retezec id_retezce="prognoza_kapital_vyplacene_uvery">splacené úvěry: $vyplacene_uvery</retezec>
+    <retezec id_retezce="prognoza_kapital_vracene_uspory">navrácené úspory: $vracene_uspory</retezec>
+</root>

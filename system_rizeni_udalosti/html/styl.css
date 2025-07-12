@@ -1,0 +1,75 @@
+/* 
+    Document   : styl
+    Created on : 23.1.2010, 17:50:41
+    Author     : pike
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+	body,
+	html {
+		margin:0;
+		padding:0;
+		color:#000;
+		background:white;
+	}
+	#wrap {
+		width:950px;
+		margin:0 auto;
+		background:gold;
+	}
+	#header {
+                padding:5px 10px;
+		background:#ddd;
+	}
+	h1 {
+	    margin:0;
+    }
+	#stavovy_radek {
+		padding:5px 10px;
+		background:#c99;
+	}
+	#stavovy_radek ul {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#stavovy_radek li {
+		display:inline;
+		margin:0;
+		padding:0;
+	}
+	#main {
+		float:left;
+		width:680px;
+		padding:10px;
+		background:silver;
+	}
+	h2 {
+		margin:0 0 1em;
+	}
+	#prave_menu {
+		float:right;
+		width:230px;
+		padding:10px;
+		background:gold;
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+		background:#cc9;
+	}
+
+        table {
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
