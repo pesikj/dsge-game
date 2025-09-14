@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : czech.xml
+    Created on : 20. březen 2010, 10:42
+    Author     : pike
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+
+<!--
+JSOU POUŽITY POPISKY K ROZTŘÍDĚNÍ XML SOUBORU
+UŽIVATELSKÉ ROZHRANÍ PO JEDNOTLIVÝCH STRÁNKÁCH
+-->
+
+<!--
+INDEX.PHP
+-->
+    <retezec id_retezce="nazev_hry">DSGEgame</retezec>
+    <retezec id_retezce="hraci_zcu">Student from ZČU</retezec>
+    <retezec id_retezce="hraci_mimo_zcu">Another player (outside ZČU)</retezec>
+    <retezec id_retezce="text_index">---- DSGEgame is an experimental macroecomomic software ----
+    You can try the trial ramsey economy with endogennous labor and zero technological progress. After registration use the name of econonomy Test (Capital at the beginnig) and entering code Test also.</retezec>    
+    <!--
+   Ostrý provoz včetně ekonomiky pro externí uživatele začne na konci února 2011. 
+    EXPERIMENTÁLNÍ MAKROEKONOMICKÝ SOFTWARE DSGEgame umožňuje provádět makroekonomické experimenty velkého rozsahu.
+    Administrátor definuje jednotlivé ekonomiky, jednotlivé trhy a přístup různých typů subjektů na tyto trhy. 
+    Subjekty jsou domácnosti, firmy, komerční banky, stát (fiskální politika) a centrální banka (monetární politika). 
+    Jednotlivým agentům (uživatelům SW) jsou přiděleny jejich role a jejich cílem je maximalizovat známou účelovou funkci 
+    v časovém horizontu trvání hry. SW mj. umožňuje simulovat dopady exogenních technologických šoků, endogenní růst, 
+    dopady opatření monetární a fiskální politiky, hospodářskou a měnovou integraci nebo desintegraci. 
+    Odpovídá tak přístupu používaném v dynamických stochastických modelech všeobecné rovnováhy. 
+    Rozsah účastníků experimentu je prakticky neomezen.
+    Děkujeme všem, kteří pomáhali při vývoji a testování.
+    -->
+    <retezec id_retezce="kontakt_autor">&lt;b&gt;Contacts&lt;/b&gt; &lt;br/&gt; Admin &lt;a href="mailto:martinci@kem.zcu.cz"&gt;David Martinčík&lt;/a&gt; &lt;br/&gt; Jiří Pešík</retezec>
+
+<!--
+REGISTRACE
+-->
+    <retezec id_retezce="login_hrace">Choose your login</retezec>
+    <retezec id_retezce="emailova_adresa">Enter you email address for further informations</retezec>
+    <retezec id_retezce="heslo">Choose your password</retezec>
+    <retezec id_retezce="kontrola_hesla">Type the password againg</retezec>
+    <retezec id_retezce="jazyk">Choose your language</retezec>
+    <retezec id_retezce="opiste_text">Rewrite the text</retezec>
+    <retezec id_retezce="slabe_heslo">The password must be a combination of UPPERCASE and lowercase, numbers and special symbols</retezec>
+    <retezec id_retezce="format_emailu">You type wrong email address</retezec>
+    <retezec id_retezce="dostatecne_heslo">Password is strong sufficiently</retezec>
+    <retezec id_retezce="kratke_heslo">Password is too short</retezec>
+
+<!--
+PRVNÍ PRIHLÁŠENÍ
+-->
+    <retezec id_retezce="formular_vytvoreni_subjektu_vytvoreni">Create the player (game subject)</retezec>
+    <retezec id_retezce="formular_vytvoreni_subjektu_uvod">Your login isn't connected with a subject. You can create a game subject using this form. The you can enter the game. Type the data given by admin of your teacher.</retezec>
+    <retezec id_retezce="formular_vytvoreni_subjektu_id_subjektu">Create new subject ID</retezec>
+    <retezec id_retezce="formular_vytvoreni_subjektu_nazev_ekonomiky">Name of economy</retezec>
+    <retezec id_retezce="formular_vytvoreni_subjektu_pristupovy_kod">Entering code</retezec>
+    <retezec id_retezce="druh_subjektu">Type of subject</retezec>
+    <retezec id_retezce="id_subjektu">Select subject ID and play</retezec>
+
+<!--
+INFORMAČNÍ LIŠTA
+-->
+    <retezec id_retezce="penize">Money</retezec>
+    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_sklad">Quantity of capital goods in store(available for sale)</retezec>
+    <retezec id_retezce="mnozstvi_spotrebniho_zbozi_sklad">Quantity of consumer goods in store(available for sale)</retezec>
+    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_vyroba">Quantity of capital goods in production (i.e. in production function and you cannnot it sell)</retezec>    
+    <retezec id_retezce="ziskane_body_celkem">Total gained points</retezec>
+    <retezec id_retezce="ziskano bodu">Získáno bodů</retezec>    
+   <retezec id_retezce="body_ziskane_v_minulem_kole">Body získané v minulém kole</retezec>
+
+<!--
+ZÁKLADNÍ MENU
+-->    
+    <retezec id_retezce="menu_prihlasen_jako">Your login: $login</retezec>
+    <retezec id_retezce="menu_odhlasit">LogOUT</retezec>
+    <retezec id_retezce="kolo_konci">Actual round ends: $cas_konce_kola</retezec>
+    <retezec id_retezce="informace_o_ekonomice">Produkční a hodnotící funkce</retezec>
+    <retezec id_retezce="menu_vyroba">Production</retezec>
+    <retezec id_retezce="prognoza_toku">Forecast of results for entered values</retezec>
+    <retezec id_retezce="poradi_subjektu">Score of all players</retezec>
+    <retezec id_retezce="investice_do_lidskeho_kapitalu">Investice do lidského kapitálu</retezec>
+    
+    <retezec id_retezce="vytvoreni_integracniho_celku">Vytvoření integračního celku</retezec>
+    <retezec id_retezce="vytvoreni_ekonomiky">Vytvoření ekonomiky</retezec>
+    <retezec id_retezce="vytvoreni_trhu">Vytvoření trhu</retezec>
+    <retezec id_retezce="vytvoreni_meny">Vytvoření měny</retezec>
+    <retezec id_retezce="nastaveni_dani">Nastavení daní</retezec>
+    <retezec id_retezce="hodnotici_funkce">Nastavení hodnotící funkce</retezec>
+    <retezec id_retezce="nastaveni_produkcnich_funkci">Nastavení produkčních funkcí</retezec>
+    <retezec id_retezce="nastaveni_pocatecnich_hodnot">Nastavení počátečních hodnot</retezec>
+    <retezec id_retezce="pridani_koncu_kol">Přidání konců kol</retezec>
+    <retezec id_retezce="nahrani_prikazu_ze_souboru">Nahrání automatických hráčů</retezec>
+    <retezec id_retezce="export_dat">Export dat za ekonomiku</retezec>
+    <retezec id_retezce="editor">Editor aktualit</retezec>
+    
+<!--
+ZÁKLADNÍ INFORMACE
+-->         
+    <retezec id_retezce="xls_soubor_si_muzete_vygenerovat">XLS soubor s vyhodnocením si můžete vygenerovat kliknutím na tlačítko GENERUJ XLS SOUBOR VYHODNOCENÍ KOLA
+            na obrazovce s informacemi o hře.</retezec>
+    <retezec id_retezce="generuj_xls_vyhodnoceni_kola">Generate XLS file with my history</retezec>            
+    
+<!--
+PRODUKČNÍ A HODNOTÍCÍ FUNKCE
+-->         
+    <retezec id_retezce="id_ekonomiky">Economy ID</retezec>
+    <retezec id_retezce="id_integracniho_celku">Integrative unit ID</retezec>
+    <retezec id_retezce="cislo_aktualniho_kola">Number of actual round</retezec>
+    <retezec id_retezce="cislo_kola">Číslo kola</retezec>
+    <retezec id_retezce="popis">Popis</retezec>
+    <retezec id_retezce="produkcni_funkce_spotrebni_zbozi">Production function for consumer goods</retezec>
+    <retezec id_retezce="produkcni_funkce_kapitalove_zbozi">Production function for capital goods</retezec>
+    <retezec id_retezce="uzitkova_funkce">Evaluative (utility) function</retezec>
+    <retezec id_retezce="produkcni_funkce_lidsky_kapital">Production function for humen capital</retezec>
+    <retezec id_retezce="hodnotici_funkce">Evaluative function</retezec>
+
+<!--
+TRHY - INFORMAČNÍ LIŠTY
+-->         
+    <retezec id_retezce="trh_trzni_cena_v_minulem_obdobi">The market price in last round was: $trzni_cena_v_minulem_kole</retezec>
+    <retezec id_retezce="mnozstvi_disponibilni_prace">Total disponible quantity of time (is devided between labor and leisure)</retezec>
+    <retezec id_retezce="mnozstvi_prace_vazane_vlastni_vyrobou">Quantity of your own labor in your own manufacturing: </retezec>
+    <retezec id_retezce="mnozstvi_prace_vazane_nabidkou">Quantity of labor what you supply on labor market: </retezec>
+    
+    <retezec id_retezce="mnozstvi_neblokovaneho_kapitaloveho_zbozi_sklad">Capital goods you can supply</retezec>
+    <retezec id_retezce="obchodovane_mnozstvi">Quantity in previous round</retezec>
+    <retezec id_retezce="pouzivana_mena">Currency used for paying</retezec>
+    <retezec id_retezce="mnozstvi_neblokovaneho_spotrebniho_zbozi">Consumer goods you can supply</retezec>
+    <retezec id_retezce="mnozstvi_obligaci_k_nabidnuti">Bonds you can supply</retezec>
+    <retezec id_retezce="hodnota_obligace">Nominal value of bonds</retezec>  
+    <retezec id_retezce="pocet_kol_do_splatnosti">Rounds to maturity</retezec>    
+    <retezec id_retezce="pocet_kol_uveroveho_vztahu">Rounds of loans or credit duration</retezec>
+    <retezec id_retezce="primarni_mena">Currency you demand or supply</retezec>
+    <retezec id_retezce="mnozstvi_neblokovaneho_disponibilniho_casu">Labor i.e. time you can supply</retezec>
+
+<!--
+TRHY - ZADÁVACÍ FORMULÁŘE
+-->  
+    <retezec id_retezce="formular_potvrdit">Enter</retezec>
+    <retezec id_retezce="pridej_radek">Add the row</retezec>
+    <retezec id_retezce="formular_potvrdit_a_zobrazit">Enter and show the chart</retezec>
+    <retezec id_retezce="zobraz_graf_nabidka">Zobraz graf zadané nabídky</retezec>
+    <retezec id_retezce="zobraz_graf_poptavka">Zobraz graf zadané poptávky</retezec>
+    <retezec id_retezce="formular_nabidka_nabidka">Your supply</retezec>
+    <retezec id_retezce="formular_nabidka_prvni_cast">If the market price is greater or equal than</retezec>
+    <retezec id_retezce="formular_nabidka_druha_cast">I wish to supply</retezec>
+    <retezec id_retezce="formular_poptavka_poptavka">Your demand</retezec>
+    <retezec id_retezce="formular_poptavka_prvni_cast">f the market price is smaller or equal than</retezec>
+    <retezec id_retezce="formular_poptavka_druha_cast">I wish to demand</retezec>
+    <retezec id_retezce="data_ulozena">Data saved</retezec>
+    <retezec id_retezce="prilis_velke_nabizene_mnozstvi">You enter too big quantity supplied. The limit is your store.</retezec>
+    <retezec id_retezce="prilis_velke_poptavane_mnozstvi">You enter too big quantity demanded. You risk to fall in negative money.</retezec>
+    <retezec id_retezce="nabidka_neni_rostouci">Your supply isn't upward sloping curve.</retezec>
+    <retezec id_retezce="poptavka_neni_klesajici">Your demand isn't downward sloping curve.</retezec>
+    <retezec id_retezce="zaporna_mnozstvi_prognozovanych_peneznich_zustatku">You expenditures are too big, the negative money is forecasted</retezec>
+
+
+
+<!--
+TRHY - GRAF
+-->  
+    <retezec id_retezce="vyvoj_trzni_ceny">Chart of market price development</retezec>
+    
+<!--
+VÝROBA - ZADÁVACÍ FORMLULÁŘ
+-->  
+    <retezec id_retezce="relativni_podil_spotrebni_zbozi">The ratio of production capacity, you use for consumer goods manufacturing (e.g. 0,123):</retezec>
+    <retezec id_retezce="mnozstvi_vlastni_prace_ve_vyrobe">The quantity of your labor, you enter in your own manufacuring (i.e. in production function): </retezec>
+    <retezec id_retezce="formular_produkce_mnozstvi_prace">Your labor used in your own manufacturing</retezec>
+    <retezec id_retezce="formular_produkce_vyrabet">V tomto kole vyrábět</retezec>
+    <retezec id_retezce="prilis_velke_mnozstvi_prace_ve_vyrobe">The limit is your total disponible quantity of time</retezec>
+
+<!--
+VÝROBA - GRAF
+-->
+    <retezec id_retezce="zobrazeni_produkcni_funkce">Here you can see the production function</retezec>
+    <retezec id_retezce="formular_grafu_vyroby_variabilni_promenna">Variable factor of production</retezec>
+    <retezec id_retezce="formular_graf_vyroby_mnozstvi_fixniho_faktoru">Quantity of fix factor of production</retezec>
+    <retezec id_retezce="formular_graf_vyroby_max_x">Maximum value of variable factor of production</retezec>
+    <retezec id_retezce="formular_graf_produkce_variabilni_promenna">Variabilní proměnná ve výrobě</retezec>
+    <retezec id_retezce="formular_graf_produkce_mnozstvi_fixniho_faktoru">Množství fixního faktoru</retezec>
+    <retezec id_retezce="formular_graf_produkce_max_x">Maximum osy x</retezec>
+
+<!--
+PROGNÓZA
+-->
+    <retezec id_retezce="id_trhu">Market ID</retezec>
+    <retezec id_retezce="nazev_trhu">Market name</retezec>
+    <retezec id_retezce="objem_prodeje">Forecast of quantity sold</retezec>
+    <retezec id_retezce="celkova_cena_prodeje">Money income</retezec>
+    <retezec id_retezce="objem_nakupu">Forecast of quantity purchased</retezec>
+    <retezec id_retezce="celkova_cena_nakupu">Money outcome</retezec>
+    <retezec id_retezce="aktualni_stav">Actual store</retezec>
+    <retezec id_retezce="prodej">Sale</retezec>
+    <retezec id_retezce="vyroba">Production</retezec>
+    <retezec id_retezce="nakup">Purchase</retezec>
+    <retezec id_retezce="vysledny_stav">Forecast for next round</retezec>
+    <retezec id_retezce="disponibilni_mnozstvi_prace">Total disponible time</retezec>
+    <retezec id_retezce="kapitalove_zbozi_sklad">Capital goods in store</retezec>
+    <retezec id_retezce="kapitalove_zbozi_vyroba">Capital goods in production</retezec>
+    <retezec id_retezce="prace">Labor and leisure</retezec>
+    <retezec id_retezce="mnozstvi_nepouzite_prace">Forecast of leisure</retezec>
+    <retezec id_retezce="bilance_trznich_transakci">Money income minus money outcome form all markets</retezec>
+    <retezec id_retezce="hodnota_toku_uroku">Inflow minus outflow of interest</retezec>
+    <retezec id_retezce="hodnota_toku_jistiny">Inflow minus outflow of principal</retezec>
+    <retezec id_retezce="ziskane_body">Forecast of gained points</retezec>
+    <retezec id_retezce="spotreba">Consumption</retezec>
+    <retezec id_retezce="prognoza_pri_starych_cenach">The price come from last roudn, but you can them change here.</retezec>    
+    <retezec id_retezce="formular_prognoza_prepocitej">Recalcualte the forecast</retezec>
+    <retezec id_retezce="splatky_obligaci">Bonds pay-off</retezec>
+    <retezec id_retezce="lidsky_kapital">Humen capital</retezec>    
+    <retezec id_retezce="investovany_cas">Time invested in human capital</retezec>
+    <retezec id_retezce="investovane_penize">Money invested in human capital</retezec>
+    <retezec id_retezce="tok_lidskeho_kapitalu">Flow of human capital</retezec>
+    <retezec id_retezce="disponibilni_mnozstvi_lidskeho_kapitalu_v_dalsim_kole">Human capital in next round</retezec>
+    <retezec id_retezce="mnozstvi_spotrebovaneho_zbozi">Quantity of goods consumend</retezec>
+    <retezec id_retezce="prijate_uroky">Inflow of interest</retezec>
+    <retezec id_retezce="vyplacene_uroky">Outflow of interest</retezec>
+    <retezec id_retezce="prijate_jistiny">Inflow of principal</retezec>
+    <retezec id_retezce="vyplacene_jistiny">Outflow of principal</retezec>
+
+<!--
+EMAIL
+-->
+    <retezec id_retezce="zprava_o_cinnosti">Zpráva o činnosti subjektu</retezec>
+    <retezec id_retezce="zdravi_vas_tym_administratoru">Zdraví vás vaš tým administátorů</retezec>
+    <retezec id_retezce="zprava_automaticky_vygenerovana">Zpráva automaticky vygenerována</retezec>
+    <retezec id_retezce="hranice_seminarni_prace">V tomto kole má 50% hráčů v ekonomice méně nebo rovno následujícímu počtu bodů</retezec>
+
+    <retezec id_retezce="email_zprava_o_cinnosti">Zpráva o činnosti_subjektu</retezec>
+    <retezec id_retezce="email_zdravi_vas_tym_administratoru">Zdraví Vás tým administrátorů.</retezec>
+    <retezec id_retezce="mateli_dotazy">Máte-li jakékoli dotazy, prosím neváhejte se na nás obrátit!</retezec>
+    <retezec id_retezce="email_zprava_automaticky_vygenerovana">Tato zpráva byla automaticky vygenerována systémem DSGE Game. Jejím účelem je usnadnit hráčům orientaci ve hře.</retezec>
+
+<!--
+XLS SOUBOR HRÁČE
+-->
+   <retezec id_retezce="hodnota_toku">Value of flow</retezec>   
+   <retezec id_retezce="popis_puvodu">Origin of flow</retezec>
+   <retezec id_retezce="mezni_cena">Marginal price</retezec>
+   <retezec id_retezce="poptavane_mnozstvi">Quantity demanded</retezec>
+   <retezec id_retezce="nabizene_mnozstvi">Quantity supplied</retezec>      
+   <retezec id_retezce="body_ziskane_v_kole">Gained points in the round</retezec>
+   <retezec id_retezce="pocatecni_hodnota">Inicial value</retezec>
+   <retezec id_retezce="trzni_cena">Market price</retezec>
+   <retezec id_retezce="pocet_obligaci">Quantity of bonds</retezec>
+   <retezec id_retezce="hodnota_obligace">Issuance of bonds</retezec>
+   <retezec id_retezce="id_meny">Currency ID</retezec>
+   <retezec id_retezce="pocet_kol_do_splatnosti">Number of rounds to maturity</retezec>
+
+<!--
+FORMULÁŘE ADMINISTRÁTORA
+-->
+    <retezec id_retezce="ekonomika">Ekonomika</retezec>
+    <retezec id_retezce="nominalni_hodnota_obligaci">Nominální hodnota obligací</retezec>
+
+    <retezec id_retezce="povolena_migrace">Povolená migrace mezi ekonomikami</retezec>
+
+    <retezec id_retezce="nastaveni_hrace">Nastavení hráče</retezec>
+    
+    <retezec id_retezce="binarni_0">ne</retezec>
+    <retezec id_retezce="binarni_1">ano</retezec>
+
+    <retezec id_retezce="druhy_trhu_trh_spotrebniho_zbozi">Trh spotřebního zboží</retezec>
+    <retezec id_retezce="druhy_trhu_trh_kapitaloveho_zbozi">Trh kapitálového zboží</retezec>
+    <retezec id_retezce="druhy_trhu_trh_obligaci">Trh obligací</retezec>
+    <retezec id_retezce="druhy_trhu_trh_prace">Trh práce</retezec>
+    <retezec id_retezce="druhy_trhu_trh_uveru_a_uspor">Trh úvěrů a úspor</retezec>
+    <retezec id_retezce="druhy_trhu_trh_uveru">Trh úvěrů</retezec>
+    <retezec id_retezce="druhy_trhu_trh_uspor">Trh úspor</retezec>
+    <retezec id_retezce="druhy_trhu_devizovy_trh">Devizový trh</retezec>
+
+    <retezec id_retezce="druhy_subjektu_spotrebitel">Spotřebitel</retezec>
+    <retezec id_retezce="druhy_subjektu_vyrobce">Výrobce</retezec>
+    <retezec id_retezce="druhy_subjektu_centralni_banka">Centrální banka</retezec>
+    <retezec id_retezce="druhy_subjektu_vlada">Vláda</retezec>
+    <retezec id_retezce="druhy_subjektu_komercni_banka">Komerční banka</retezec>
+    <retezec id_retezce="druhy_subjektu_podnikatel">Podnikatel</retezec>
+
+    <retezec id_retezce="formular_superadministratora_vytvoreni_integracniho_celku">Vytvoření integračního celku</retezec>
+    <retezec id_retezce="formular_superadministratora_id_integracniho_celku">ID celku (jednoznačně identifikuje celek)</retezec>
+    <retezec id_retezce="formular_superadministratora_povolena_migrace">Povolení migrace mezi ekonomikami</retezec>
+    <retezec id_retezce="formular_superadministratora_auto_kurz">Automatický výpočet rovnovážného měnového kurzu</retezec>
+    <retezec id_retezce="formular_superadministratora_celek_popis">Popis integračního celku</retezec>
+    <retezec id_retezce="formular_superadministratora_vytvoreni_ekonomiky">Vytvoření ekonomiky</retezec>
+    <retezec id_retezce="formular_superadministratora_id_ekonomiky">ID ekonomiky (bude zadáváno hráči při vytváření subjektu)</retezec>
+    <retezec id_retezce="formular_superadministratora_pristupovy_kod">Přístupový kód ekonomiky (bude zadáván hráči při vytváření subjektu)</retezec>
+    <retezec id_retezce="formular_superadministratora_nazev_meny">Název měny ekonomiky</retezec>
+    <retezec id_retezce="formular_superadministratora_ekonomika_popis">Popis ekonomiky</retezec>
+    <retezec id_retezce="formular_superadministratora_vyber_celku_pro_ekonomiku">Vyberte integrační celek, ve kterém se bude ekonomika nacházet</retezec>
+    <retezec id_retezce="formular_superadministratora_vytvoreni_trhu">Vytvoření trhu</retezec>
+    <retezec id_retezce="formular_superadministratora_vytvoreni_trhu_id_ekonomiky">ID ekonomiky, jejíž měna bude využívána pro transakce na trhu</retezec>
+    <retezec id_retezce="formular_superadministratora_vytvoreni_trhu_id_druhu_trhu">Druh trhu</retezec>
+    <retezec id_retezce="formular_superadministratora_vytvoreni_trhu_nazev_trhu">Název trhu</retezec>
+
+    <retezec id_retezce="generuj_xls_export_dat">Export veškerých dat za ekonomiku</retezec>
+
+<!--
+STARÉ TEXTY
+-->
+    <retezec id_retezce="nadpis_prehled">Přehled transakcí</retezec>
+    <retezec id_retezce="prehled_prodej_spotrebni_zbozi">prodal $mnozstvi kusů spotřebního zboží za cenu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_kapitalove_zbozi">prodal $mnozstvi kusů kapitálového zboží za cenu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_prace">odpracoval $mnozstvi hodin za hodinovou mzdu $cena.</retezec>
+    <retezec id_retezce="prehled_prodej_kapital_2_obdobi">zapůjčil částku $mnozstvi na 2 období za tržní úrokovou míru $cena %.</retezec>
+    <retezec id_retezce="prehled_spotreba">nakoupil $mnozstvi kusů spotřebního zboží za cenu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_kapitalove_zbozi">nakoupil $mnozstvi kusů spotřebního zboží za cenu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_prace">nakoupil $mnozstvi hodin práce za hodinovou mzdu $cena</retezec>
+    <retezec id_retezce="prehled_nakup_kapital_2_obdobi">získal úvěr v hodnotě $mnozstvi za úrokovou míru $cena %</retezec>
+    <retezec id_retezce="produkce">vyrobil $mnozstvi_spotrebni_zbozi kusů spotřebního a $mnozstvi_kapitalove_zbozi kusů kapitálového zboží</retezec>
+
+    <retezec id_retezce="prehled_kapital_vyplacene_uroky">zaplatili úrok z půjčky v hodnotě $vyplacene_uroky</retezec>
+    <retezec id_retezce="prehled_kapital_prijate_uroky">obdrželi úrok ze zapůjčených úspor v hodnotě $prijate_uroky</retezec>
+    <retezec id_retezce="prehled_kapital_vyplacene_uvery">splatili úvěr o hodnotě $vyplacene_uvery</retezec>
+    <retezec id_retezce="prehled_kapital_vracene_uspory">obdrželi zpět dříve zapůjčené úspory v hodnotě $vracene_uspory</retezec>
+
+    <retezec id_retezce="prehled_kapital_celkem">celkově změnili výši hotovosti o $zmena_hotovosti</retezec>
+    <retezec id_retezce="prehled_hodnoceni_ziskane_body">získali $ziskane_body bodů</retezec>
+    <retezec id_retezce="prognoza_popis">Zde si můžete určit přehled finančních toků podle zadaných cen.</retezec>
+    <retezec id_retezce="trh_spotrebniho_zbozi">Trh spotřebního zboží</retezec>
+    <retezec id_retezce="trh_kapitaloveho_zbozi">Trh kapitálového zboží</retezec>
+    <retezec id_retezce="trh_prace">Trh práce</retezec>
+    <retezec id_retezce="trh_kapitalu_2_obdobi">Trh kapitálu na 2 obdobi</retezec>
+    <retezec id_retezce="trh">Trh</retezec>
+    <retezec id_retezce="prijmy">Příjmy</retezec>
+    <retezec id_retezce="vydaje">Výdaje</retezec>
+
+    <retezec id_retezce="spotrebni_zbozi">Spotřební zboží na skladě</retezec>
+    <retezec id_retezce="kapitalove_zbozi">kapitálové zboží</retezec>
+    <retezec id_retezce="mnozstvi_prace">Práce</retezec>
+    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi">Kapitálové zboží</retezec>
+    <retezec id_retezce="cena">cena</retezec>
+    <retezec id_retezce="max_prace">Maximálně můžete nabízet $mnozstvi_prace jednotek práce</retezec>
+    <retezec id_retezce="kapitalove_zbozi_ve_vyrobe">V současné době je do výroby zapojeno $mnozstvi_kapitaloveho_zbozi kapitálových statků</retezec>
+    <retezec id_retezce="prubeh_produkcni_funkce">Průběh produkční funkce</retezec>
+
+    <retezec id_retezce="prognoza_dalsi_transakce">Dále dojde k následujícím finančním transakcím:</retezec>
+    <retezec id_retezce="prognoza_celkem">Vaše hotovost po skončení kola by při zadaných cenách byla $mnozstvi_kapitalu</retezec>
+    <retezec id_retezce="prognoza_celkem_body">Váš bodový zisk při daných cenách by byl $mnozstvi_bodu</retezec>
+    <retezec id_retezce="prognoza_kapital_vyplacene_uroky">vyplacené úroky: $vyplacene_uroky</retezec>
+    <retezec id_retezce="prognoza_kapital_prijate_uroky">přijané úroky: $prijate_uroky</retezec>
+    <retezec id_retezce="prognoza_kapital_vyplacene_uvery">splacené úvěry: $vyplacene_uvery</retezec>
+    <retezec id_retezce="prognoza_kapital_vracene_uspory">navrácené úspory: $vracene_uspory</retezec>
+
+    <retezec id_retezce="menu_prehled">Přehled</retezec>
+
+    <retezec id_retezce="menu_prognoza">Prognóza finančních toků</retezec>
+    <retezec id_retezce="menu_aktualni_stav">Aktuální stav</retezec>
+    <retezec id_retezce="menu_administrace">Administrace</retezec>
+    <retezec id_retezce="menu_editor">Editor úvodní stránky</retezec>
+    <retezec id_retezce="menu_seznam_hracu">Seznam hráčů</retezec>
+    <retezec id_retezce="menu_export_dat">Export dat</retezec>
+    <retezec id_retezce="menu_nastaveni_hry">Nastavení hry</retezec>
+
+   <retezec id_retezce="TOP10_nejlepsich_hracu_v_minulem_kole">TOP10 nejlepších hráčů v této ekonomice v minulém kole (prosíme, nemlaťte je :-) ):</retezec>
+
+</root>

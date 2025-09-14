@@ -25,8 +25,8 @@
 			$this -> folders 	= array();
 			$this -> files		= array();
 			$this -> exclude_extensions = array('gif', 'jpg', 'jpeg', 'png', 'tft', 'bmp', 'rest-of-the-file-extensions-to-exclude');
-			$this -> exclude_files 	    = array('count_lines.php', 'EvalMath.php');
-			$this -> exclude_folders 	 = array('_private', '_vti_bin', '_vti_cnf', '_vti_log', '_vti_pvt', '_vti_txt', 'jscripts');
+			$this -> exclude_files 	    = array('count_lines.php', 'EvalMath.php', 'class.phpmailer.php', 'PHPExcel.php', 'class.smtp.php');
+			$this -> exclude_folders 	 = array('_private', '_vti_bin', '_vti_cnf', '_vti_log', '_vti_pvt', '_vti_txt', 'jscripts', 'PHPExcel', 'PHPMailer', 'smpt', 'captcha', 'csv' );
 		}
 		
 		function count_lines() {

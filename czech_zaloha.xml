@@ -20,33 +20,27 @@ INDEX.PHP
 -->
     <retezec id_retezce="nazev_hry">DSGEgame</retezec>
     <retezec id_retezce="hraci_zcu">Student ZČU</retezec>
-    <retezec id_retezce="hraci_mimo_zcu">Ostatní/Others</retezec>
-    <retezec id_retezce="text_index">INFO</retezec>    
-
+    <retezec id_retezce="hraci_mimo_zcu">Hráč mimo ZČU</retezec>
+    <retezec id_retezce="text_index">---- DSGEgame je EXPERIMENTÁLNÍ MAKROEKONOMICKÝ SOFTWARE ----
+    Studenti VŠMIE a SVI se musí nejdříve zaregistrovat!</retezec>    
+    <!--
+   Ostrý provoz včetně ekonomiky pro externí uživatele začne na konci února 2011. 
+    EXPERIMENTÁLNÍ MAKROEKONOMICKÝ SOFTWARE DSGEgame umožňuje provádět makroekonomické experimenty velkého rozsahu.
+    Administrátor definuje jednotlivé ekonomiky, jednotlivé trhy a přístup různých typů subjektů na tyto trhy. 
+    Subjekty jsou domácnosti, firmy, komerční banky, stát (fiskální politika) a centrální banka (monetární politika). 
+    Jednotlivým agentům (uživatelům SW) jsou přiděleny jejich role a jejich cílem je maximalizovat známou účelovou funkci 
+    v časovém horizontu trvání hry. SW mj. umožňuje simulovat dopady exogenních technologických šoků, endogenní růst, 
+    dopady opatření monetární a fiskální politiky, hospodářskou a měnovou integraci nebo desintegraci. 
+    Odpovídá tak přístupu používaném v dynamických stochastických modelech všeobecné rovnováhy. 
+    Rozsah účastníků experimentu je prakticky neomezen.
+    Děkujeme všem, kteří pomáhali při vývoji a testování.
+    -->
     <retezec id_retezce="kontakt_autor">&lt;b&gt;Kontakty&lt;/b&gt; &lt;br/&gt; Administrátor &lt;a href="mailto:martinci@kem.zcu.cz"&gt;David Martinčík&lt;/a&gt; &lt;br/&gt; Jiří Pešík</retezec>
-
-<!--
-INFORMACE
--->
-    <retezec id_retezce="info">
-DSGEgame je specializovaný software vyvinutý na FAKULTĚ EKONOMICKÉ ZÁPADOČESKÉ UNIVERZITY V PLZNI, který slouží ke dvěma účelům:
-1)	MAKROEKONOMICKÉ EXPERIMENTY   
-2)	PODPORA VÝUKY MAKROEKONOMIE I MIKROEKONOMIE   
-TESTOVACÍ EKONOMIKA PRO „NOVÁČKY“ je neustále přístupna. Jedná se o jednoduchou ekonomiku (Ramsey-Cass-Koppmansův model), do které se po registraci přihlásíte zadáním jména ekonomiky: Test a přístupovým kódem: Test. Zde je možné si vyzkoušet základní fungování software. 
-SLOŽITĚJŠÍ EKONOMIKY si vyžadují podrobnou instruktáž experimentátora/vyučujícího.   
-Software funguje na principu DYNAMIC STOCHASTIC GENERAL EQUILIBRIUM MODELS (DSGE), které představují v současnosti dominantní makroekonomický přístup. Principiálně jsou postaveny na mikroekonomických základech, kdy jevy v celé ekonomice jsou výsledkem rozhodování jednotlivých ekonomických subjektů. Ekonomický subjekty (spotřebitelé/domácnosti, výrobci/firmy) se snaží za daných podmínek/omezení maximalizovat svoji účelovou funkci v daném časovém horizontu (konečném nebo nekonečném). V případě domácností jde o maximalizaci užitku a v případě firem o maximalizaci zisku. Domácnosti jsou limitovány svým rozpočtovým omezením a firmy svojí technologii a produkční funkcí. V modelech může existovat také vláda a centrální banka, které provádějí fiskální a monetární politiku. Je možné konstruovat také modely s více ekonomikami. DSGE modely jsou tedy postaveny na neustálém optimalizačním chování ekonomických subjektů a jsou tak robustní vůči tzv. Lucasově kritice.
-Lucasova kritika ve stručnosti říká, že regrese založené na modelech v redukované formě nelze použít pro provádění hospodářské politiky, protože změna hospodářské politiky vyvolá kvůli neustálé snaze ekonomických agentů o optimalizaci (maximalizace užitku a zisku) změnu jejich chování, takže původní redukovaný regresní model přestane platit. Zároveň nabízí východisko v podobě vytváření modelů s tzv. deep parameters (hlubokými parametry), které jsou neměnné vůči změně hospodářské politiky. Hlubokými parametry jsou parametry užitkové a produkční funkce, dále např. exogenní technologický pokrok, míra depreciace kapitálu apod. K tomu všemu je samozřejmě nutné předpokládat určitý tvar příslušných funkcí.
-DSGEgame umožňuje různé konfigurace ekonomik, jejich propojení, různé trhy a přístup různých typů subjektů na tyto trhy. Každý hráč má přidělen některý typ subjektu: domácnost, firma, komerční banka, stát (fiskální politika) nebo centrální banka (monetární politika). Je možné, aby jeden hráč obsluhoval více subjektů i různého typu. Toto je vhodné zejména pro samotné experimentátory/učitele. Jednotlivým typům subjektů v jednotlivých ekonomikách jsou pak přiřazeny jejich účelové funkce a počáteční vybavení (stavové proměnné na začátku hry) a jejich cílem je maximalizovat tyto účelové funkce v časovém horizontu trvání hry. Od tohoto se odvíjí bodové hodnocení hráčů. Administrátor tak definuje celkové institucionální uspořádání ekonomiky (jaké subjekty, jaké trhy, jaké účelové funkce) a definuje také výše zmíněné deep parameters. Administrátor také definuje časování hry – konce jednotlivých kol.
-DSGEgame umožňuje simulovat mj. dopady exogenních technologických šoků, opatření fiskální a monetární politiky, ekonomické a měnové integrace a desintegrace apod. Je možné definovat také parametry endogenního ekonomického růstu. Počet hráčů v jednotlivých ekonomikách je neomezen.
-Na co DSGEgame používáme:
-Ad 1) EXPERIMENTY VELKÉHO ROZSAHU – protože software po prvotní konfiguraci funguje zcela automaticky po neomezeně dlouhou dobu a experimentátor má veškeré další změny institucionálního prostředí a deep parameters plně pod kontrolou, je možné velmi pohodlně provádět ekonomické experimenty testující chování subjektů v různě složitých dynamických systémech.
-Ad 2) PRAKTICKÉ VYZKOUŠENÍ SI EKONOMICKÝCH POJMŮ, PRINCIPŮ A DÍLČÍCH MODELŮ VYKLÁDANÝCH PŘI VÝUCE – protože modely robustní vůči Lucasově kritice vlastně stírají „tradiční“ rozdíl mezi mikroekonomií a makroekonomií, je možné DSGEgame univerzálně (v závislosti na konfiguraci právě hrané hry) použít při výuce. DSGEgame, tím jak je postavena na nejnovějších ekonomických přístupech, obsahuje většinu látky probírané v mainstreamové mikro a makroekonomii, jak v základních tak ve středně pokročilých kurzech.
-</retezec>
 
 <!--
 REGISTRACE
 -->
-    <retezec id_retezce="login_hrace">Zvolte si svůj login/Choose you login</retezec>
+    <retezec id_retezce="login_hrace">Zvolte si svůj login (studenti VŠMIE uvedou číslo smlouvy, studenti SVI použijí své příjmení a jméno ve formátu prijmeni_jmeno)</retezec>
     <retezec id_retezce="emailova_adresa">Zdejte svoji emailovou adresu pro zasílání informací</retezec>
     <retezec id_retezce="heslo">Zvolte si heslo</retezec>
     <retezec id_retezce="kontrola_hesla">Zadejte heslo znovu pro kontrolu</retezec>
@@ -72,12 +66,12 @@ PRVNÍ PRIHLÁŠENÍ
 INFORMAČNÍ LIŠTA
 -->
     <retezec id_retezce="penize">Peníze</retezec>
-    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_sklad">Kapitálové zboží sklad</retezec>
-    <retezec id_retezce="mnozstvi_spotrebniho_zbozi_sklad">Spotřební zboží sklad</retezec>
-    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_vyroba">Kapitál ve výrobě</retezec>    
-    <retezec id_retezce="ziskane_body_celkem">Body celkem</retezec>
+    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_sklad">Množství kapitálového zboží na skladě (možno prodat)</retezec>
+    <retezec id_retezce="mnozstvi_spotrebniho_zbozi_sklad">Množství spotřebního zboží na skladě (možno prodat)</retezec>
+    <retezec id_retezce="mnozstvi_kapitaloveho_zbozi_vyroba">Množství kapitálového zboží ve výrobě (tj. v produkční funkci a nelze ho dále prodat)</retezec>    
+    <retezec id_retezce="ziskane_body_celkem">Získané body celkem</retezec>
     <retezec id_retezce="ziskano bodu">Získáno bodů</retezec>    
-   <retezec id_retezce="body_ziskane_v_minulem_kole">Body minulé kolo</retezec>
+   <retezec id_retezce="body_ziskane_v_minulem_kole">Body získané v minulém kole</retezec>
 
 <!--
 ZÁKLADNÍ MENU
@@ -129,20 +123,20 @@ PRODUKČNÍ A HODNOTÍCÍ FUNKCE
 TRHY - INFORMAČNÍ LIŠTY
 -->         
     <retezec id_retezce="trh_trzni_cena_v_minulem_obdobi">Tržní cena v minulém kole byla: $trzni_cena_v_minulem_kole</retezec>
-    <retezec id_retezce="mnozstvi_disponibilni_prace">Celkové disponibilní množství času (rozděluje se na práci a volný čas)</retezec>
+    <retezec id_retezce="mnozstvi_disponibilni_prace">Celkové disponibilní množství času (rozděluje se na práci a volný čas): </retezec>
     <retezec id_retezce="mnozstvi_prace_vazane_vlastni_vyrobou">Množství vlastní práce vložené do vlastní výroby: </retezec>
     <retezec id_retezce="mnozstvi_prace_vazane_nabidkou">Množství práce vázané nabídkou na trhu práce: </retezec>
     
-    <retezec id_retezce="mnozstvi_neblokovaneho_kapitaloveho_zbozi_sklad">Kapitálové zboží k nabídnutí</retezec>
-    <retezec id_retezce="obchodovane_mnozstvi">Obchodované množství v minulém kole</retezec>
-    <retezec id_retezce="pouzivana_mena">Používaná měna (platí se s ní)</retezec>
-    <retezec id_retezce="mnozstvi_neblokovaneho_spotrebniho_zbozi">Spotřební zboží k nabídnutí</retezec>
-    <retezec id_retezce="mnozstvi_obligaci_k_nabidnuti">Obligace k nabídnutí</retezec>
-    <retezec id_retezce="hodnota_obligace">Nominální hodnota obligace</retezec>  
-    <retezec id_retezce="pocet_kol_do_splatnosti">Počet kol do splatnosti</retezec>    
-    <retezec id_retezce="pocet_kol_uveroveho_vztahu">Počet kol úvěrového vztahu</retezec>
-    <retezec id_retezce="primarni_mena">Primární měna (nakupuje se a prodává)</retezec>
-    <retezec id_retezce="mnozstvi_neblokovaneho_disponibilniho_casu">Práce (čas) k nabídnutí</retezec>
+    <!--mnozstvi_neblokovaneho_kapitaloveho_zbozi_sklad: -->
+    <!--obchodovane_mnozstvi: -->
+    <!--pouzivana_mena: -->
+    <!--mnozstvi_neblokovaneho_spotrebniho_zbozi: -->
+    <!--mnozstvi_obligaci_k_nabidnuti: -->
+    <!--hodnota_obligace:  -->    
+    <!--pocet_kol_do_splatnosti: -->    
+    <!--pocet_kol_uveroveho_vztahu: -->
+    <!--primarni_mena: -->
+    <!--mnozstvi_neblokovaneho_disponibilniho_casu: -->
 
 <!--
 TRHY - ZADÁVACÍ FORMULÁŘE
@@ -153,17 +147,17 @@ TRHY - ZADÁVACÍ FORMULÁŘE
     <retezec id_retezce="zobraz_graf_nabidka">Zobraz graf zadané nabídky</retezec>
     <retezec id_retezce="zobraz_graf_poptavka">Zobraz graf zadané poptávky</retezec>
     <retezec id_retezce="formular_nabidka_nabidka">Nabídka</retezec>
-    <retezec id_retezce="formular_nabidka_prvni_cast">Při tržní ceně větší nebo rovno</retezec>
+    <retezec id_retezce="formular_nabidka_prvni_cast">Pokud bude tržní cena větší NEBO ROVNO než</retezec>
     <retezec id_retezce="formular_nabidka_druha_cast">budu nabízet</retezec>
     <retezec id_retezce="formular_poptavka_poptavka">Poptávka</retezec>
-    <retezec id_retezce="formular_poptavka_prvni_cast">Při tržní ceně menší nebo rovno</retezec>
+    <retezec id_retezce="formular_poptavka_prvni_cast">Pokud bude tržní cena menší NEBO ROVNO než</retezec>
     <retezec id_retezce="formular_poptavka_druha_cast">budu poptávat</retezec>
     <retezec id_retezce="data_ulozena">Data uložena</retezec>
     <retezec id_retezce="prilis_velke_nabizene_mnozstvi">Zadal(a) jste příliš velké nabízené množství. Nesmíte nabízet více, než máte k dispozici.</retezec>
     <retezec id_retezce="prilis_velke_poptavane_mnozstvi">Příliš velké poptávané množství - viz omezení poptávky</retezec>
     <retezec id_retezce="nabidka_neni_rostouci">Zadaná nabídka není rostoucí křivka</retezec>
     <retezec id_retezce="poptavka_neni_klesajici">Zadaná poptávka není klesající křivka</retezec>
-    <retezec id_retezce="zaporna_mnozstvi_prognozovanych_peneznich_zustatku">Příliš velké výdaje, dle prognózy vyjde záporná hotovost</retezec>
+
 
 
 
@@ -179,7 +173,7 @@ VÝROBA - ZADÁVACÍ FORMLULÁŘ
     <retezec id_retezce="mnozstvi_vlastni_prace_ve_vyrobe">Množství vlastní práce, které vložíte do své výroby (tj. do produkční funkce): </retezec>
     <retezec id_retezce="formular_produkce_mnozstvi_prace">Množství vlastní práce pro vlastní výrobu</retezec>
     <retezec id_retezce="formular_produkce_vyrabet">V tomto kole vyrábět</retezec>
-    <retezec id_retezce="prilis_velke_mnozstvi_prace_ve_vyrobe">Překračujete disponibilní množství času</retezec>
+    <retezec id_retezce="prilis_velke_mnozstvi_prace_ve_vyrobe">Vzhledem k zadané nabídce práce můžete překročit disponibilní množství času</retezec>
 
 <!--
 VÝROBA - GRAF

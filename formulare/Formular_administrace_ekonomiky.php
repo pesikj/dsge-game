@@ -9,7 +9,7 @@
  *
  * @author pike
  */
-class Formular_administrace {
+class Formular_administrace_ekonomiky {
     //put your code here
     private $pravo_ukladat;
     private $spravce_konfigurace;
@@ -26,6 +26,7 @@ class Formular_administrace {
     }
 
     private function vygeneruj_a_vloz_formular_administrace() {
+        $prekladac = $GLOBALS['prekladac'];
         $pageURL = 'http';
         if ($_SERVER["HTTPS"] == "on") {
             $pageURL .= "s";

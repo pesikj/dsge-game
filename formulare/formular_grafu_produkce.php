@@ -13,6 +13,8 @@ class formular_grafu_produkce {
     //put your code here
 
     public function generuj_formular_grafu_produkce($default_data_pro_formular_grafu) {
+        $prekladac = $GLOBALS['prekladac'];
+        
         $pageURL = 'http';
         if ($_SERVER["HTTPS"] == "on") {
             $pageURL .= "s";
@@ -29,7 +31,7 @@ class formular_grafu_produkce {
             echo "<table border=\"0\" style=\"width: 100%\">";
                 echo "<tr>";
                     echo "<td>";
-                        echo "Variabilní proměnná ve výrobě";
+                        echo $prekladac->vloz_retezec("formular_graf_produkce_variabilni_promenna");
                     echo "</td>";
                     echo "<td>";
                         echo "<select name=\"graf_variabilni_vyrobni_faktor\" size=\"1\">";
@@ -37,20 +39,20 @@ class formular_grafu_produkce {
                                 if ($default_data_pro_formular_grafu['variabilni_vyrobni_faktor'] == 'prace') {
                                     echo " selected=\"selected\" ";
                                 }
-                            echo " > hodiny práce  </option>";
+                            echo " > " . $prekladac->vloz_retezec("mnozstvi_prace") ."  </option>";
 
                             echo "<option value=\"kapitalove_zbozi\"";
                                 if ($default_data_pro_formular_grafu['variabilni_vyrobni_faktor'] == 'kapitalove_zbozi') {
                                     echo " selected=\"selected\" ";
                                 }
-                            echo " > množství kapitálového zboží </option>";
+                            echo " >" . $prekladac->vloz_retezec("mnozstvi_kapitaloveho_zbozi") .  "</option>";
                         echo "</select>";
                     echo "</td>";
                 echo "</tr>";
 
                 echo "<tr>";
                     echo "<td>";
-                        echo "Množství fixního faktoru: ";
+                        echo $prekladac->vloz_retezec("formular_graf_produkce_mnozstvi_fixniho_faktoru");
                     echo "</td>";
                     echo "<td>";
                         echo "<input type=\"text\"  name=\"mnozstvi_fixniho_faktoru\" value=\"";
@@ -61,7 +63,7 @@ class formular_grafu_produkce {
 
                 echo "<tr>";
                     echo "<td>";
-                        echo "Maximum osy x: ";
+                        echo $prekladac->vloz_retezec("formular_graf_produkce_max_x");
                     echo "</td>";
                     echo "<td>";
                         echo "<input type=\"text\"  name=\"osa_x_max\" value=\"";
@@ -72,7 +74,7 @@ class formular_grafu_produkce {
             echo "</table>";
             echo "<p>";
                 echo "<input type=\"hidden\" name=\"id_stranky\" value=\"produkce\" />";
-                echo "<input type=\"submit\" name=\"tlacitko\" value=\"Potvrď\" />";
+                echo "<input type=\"submit\" name=\"tlacitko\" value=\"". $prekladac->vloz_retezec("formular_potvrdit") ."\" />";
             echo "</p>";
         echo "</form>";
     }

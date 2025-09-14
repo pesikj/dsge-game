@@ -8,49 +8,17 @@
 -->
 <conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="conf_schema.xsd">
     <pristup_databaze>
-        <adresa_databazoveho_serveru>localhost</adresa_databazoveho_serveru>
-        <login>dsgegame</login>
-        <passwd>gamedsge</passwd>
-        <jmeno_databaze>web_dsgegame_db</jmeno_databaze>
+        <adresa_databazoveho_serveru></adresa_databazoveho_serveru>
+        <login></login>
+        <passwd></passwd>
+        <jmeno_databaze></jmeno_databaze>
     </pristup_databaze>
-    
-    <aktualni_info>
-        <kolo>1</kolo>
-        <uzamceni_databaze>0</uzamceni_databaze>
-    </aktualni_info>
     <server_info>
-        <adresa>http://localhost/SimulacniHra/</adresa>
+        <adresa></adresa>
     </server_info>
-    <produkcni_funkce>
-        <funkce>(1.04 ^ kolo)*(mnozstvi_prace ^ 0.5)*(mnozstvi_kapitaloveho_zbozi  ^ 0.5)</funkce>
-    </produkcni_funkce>
-    <hodnotici_funkce>
-        <funkce> (0.95 ^ kolo) * (mnozstvi_volneho_casu ^ 0.5) * (mnozstvi_spotrebovanych_statku ^ 0.5) - 300 * neaktivni - 600 * zaporny_penezni_zustatek</funkce>
-    </hodnotici_funkce>
-    <pocatecni_ceny>
-        <pocatecni_cena id_trhu="trh_spotrebniho_zbozi">100</pocatecni_cena>
-        <pocatecni_cena id_trhu="trh_kapitaloveho_zbozi">655</pocatecni_cena>
-        <pocatecni_cena id_trhu="trh_prace">26</pocatecni_cena>
-        <pocatecni_cena id_trhu="trh_kapitalu_2_obdobi">15</pocatecni_cena>
-    </pocatecni_ceny>
-    <pocatecni_mezni_ceny>
-        
-    </pocatecni_mezni_ceny>
-    <pocatecni_hodnoty>
-        <pocatecni_hodnota id_polozky="spotrebni_zbozi_na_sklade">520</pocatecni_hodnota>
-        <pocatecni_hodnota id_polozky="kapitalove_zbozi_na_sklade">160</pocatecni_hodnota>
-        <pocatecni_hodnota id_polozky="kapitalove_zbozi_ve_vyrobe">250</pocatecni_hodnota>
-        <pocatecni_hodnota id_polozky="kapital">25000</pocatecni_hodnota>
-    </pocatecni_hodnoty>
-    <trhy>
-        <trh tabulka="trh_prace" typ_trhu="prace">Trh práce</trh>
-        <trh tabulka="trh_spotrebniho_zbozi" typ_trhu="spotrebniho_zbozi">Trh spotřebního zboží</trh>
-        <trh tabulka="trh_kapitaloveho_zbozi" typ_trhu="kapitaloveho_zbozi">Trh kapitálového zboží</trh>
-        <trhy_kapitalu>
-            <trh_kapitalu tabulka="trh_kapitalu_2_obdobi" pocet_obdobi="2">Trh kapitálu 2 období</trh_kapitalu>
-        </trhy_kapitalu>
-    </trhy>
-    <amortizace_kapitalu>
-        <amortizacni_faktor>0.1</amortizacni_faktor>
-    </amortizace_kapitalu>
+    <parametry_cookie>
+        <domain></domain>
+        <path>/</path>
+    </parametry_cookie>
+
 </conf>
